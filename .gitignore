@@ -1,8 +1,7 @@
 /server/node_modules
 /client/node_modules
 /client/build
-/client/src/components/player/video.mp4
+/clinet/public/video.mp4
 */package-lock.json
 */yarn.lock
-
-.DS_Store
+.DS_Storegit

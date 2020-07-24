@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import videojs from "video.js";
 import io from "socket.io-client";
-import videoSrc from "./video.mp4";
 import "video.js/dist/video-js.css";
 import "@videojs/themes/dist/fantasy/index.css";
 
@@ -24,7 +23,7 @@ export default () => {
       height: "225",
     };
     const player = videojs(playerRef.current, options, () => {
-      player.src(videoSrc);
+      player.src("/video.mp4");
 
       player.on("timeupdate", () => {
         if (player.paused()) {
